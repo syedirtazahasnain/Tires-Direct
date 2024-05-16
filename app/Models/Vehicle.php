@@ -9,4 +9,5 @@ use Illuminate\Database\Eloquent\Model;
 class Vehicle extends Model
 {
     use HasFactory, SoftDeletes;
+    protected $fillable = ['make', 'model', 'year'];
 }
