@@ -4,6 +4,11 @@ use App\Http\Controllers\Backend\GeneralController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+
+Route::get('/test', function(){
+    return Hash::make('test@1234'); //$2y$12$Jw8EFS6hGXYRD/e/C0JEiuV8wBnWj5TEQlhDcV45oIFDRTBeNC.cS
+});
+
 Route::get('/', function () {
     return view('welcome');
 });

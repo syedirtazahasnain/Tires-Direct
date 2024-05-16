@@ -20,7 +20,8 @@ class GeneralController extends Controller
 
             case 'admin':
                 // return redirect()->route('admin.dashboard');
-                return view('admin-dashboard');
+//                return view('admin-dashboard');
+                return view('dashboard.admin.dashboard');
                 break;
 
             default:
