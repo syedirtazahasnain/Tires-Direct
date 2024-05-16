@@ -13,6 +13,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
 Route::middleware('auth','verified','role:customer')->group(function () {
     Route::get('/dashboard', [GeneralController::class, '__invoke'])->name('dashboard');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
