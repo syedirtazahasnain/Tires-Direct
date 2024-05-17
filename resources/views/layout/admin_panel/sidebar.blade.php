@@ -4,7 +4,7 @@
                 <li class="sidebar-item">
                     <a
                         class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href=""
+                        href="/dashboard"
                         aria-expanded="false"
                     ><i class="mdi mdi-view-dashboard"></i
                         ><span class="hide-menu">Dashboard</span></a
@@ -14,7 +14,7 @@
                 <li class="sidebar-item">
                     <a
                         class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href=""
+                        href="{{ route('vehicles.index') }}"
                         aria-expanded="false"
                     ><i class="mdi mdi-chart-bar"></i
                         ><span class="hide-menu">Vehicles</span></a
@@ -23,7 +23,7 @@
                 <li class="sidebar-item">
                     <a
                         class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href=""
+                        href="/tyres"
                         aria-expanded="false"
                     ><i class="mdi mdi-chart-bubble"></i
                         ><span class="hide-menu">Tyres</span></a
@@ -32,7 +32,7 @@
                 <li class="sidebar-item">
                     <a
                         class="sidebar-link waves-effect waves-dark sidebar-link"
-                        href=""
+                        href="/brands"
                         aria-expanded="false"
                     ><i class="mdi mdi-border-inside"></i
                         ><span class="hide-menu">Brands</span></a

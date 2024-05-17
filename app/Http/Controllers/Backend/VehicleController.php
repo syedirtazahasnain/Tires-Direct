@@ -14,7 +14,7 @@ class VehicleController extends Controller
     public function index()
     {
         $vehicles = Vehicle::paginate(10); // Paginate results for efficiency
-        return view('dashboard.admin.vehicles.index', compact('vehicles'));
+        return view('dashboard.admin.vehicles', compact('vehicles'));
     }
 
     /**
