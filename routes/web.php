@@ -39,10 +39,10 @@ Route::middleware('auth','verified','role:admin')->prefix('admin')->group(functi
     Route::resource('vehicles', VehicleController::class)->names([
         'index' => 'vehicles.index',
         'create' => 'vehicles.create',
-        'store' => 'vehicles.store',
+//        'store' => 'vehicles.store',
         'show' => 'vehicles.show',
         'edit' => 'vehicles.edit',
-        'update' => 'vehicles.update',
+//        'update' => 'vehicles.update',
         'destroy' => 'vehicles.destroy'
     ]);
 

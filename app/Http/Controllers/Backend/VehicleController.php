@@ -22,7 +22,7 @@ class VehicleController extends Controller
      */
     public function create()
     {
-        //
+        return view('modal-contents.vehicleform');
     }
 
     /**

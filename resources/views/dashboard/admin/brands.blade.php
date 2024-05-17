@@ -23,6 +23,10 @@
     <div class="container-fluid">
         <div class="col-12">
             <div class="card">
+                <div class="card-header">
+                    <button type="button" class="btn btn-primary float-end
+                    "> Add New Brand </button>
+                </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table
