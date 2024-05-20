@@ -1,11 +1,12 @@
 <?php
 
+use App\Http\Controllers\Backend\BrandController;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Backend\TireController;
 use App\Http\Controllers\Backend\GeneralController;
 use App\Http\Controllers\Backend\VehicleController;
-
-//Test Routes
 
 Route::get('/test', function(){
     return Hash::make('test@1234'); //$2y$12$g/YZ3t5MbgyRSo3I/tNOm.gD5FJDPMnfcU3AVq7iTK/IPOUEHw/vq
@@ -46,7 +47,10 @@ Route::middleware('auth','verified','role:admin')->prefix('admin')->group(functi
         'destroy' => 'vehicles.destroy'
     ]);
 
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    // Route::resource('vehicles', VehicleController::class);
+    Route::resource('brands', BrandController::class);
+    Route::resource('tires', TireController::class);
+    Route::get('/profile', [ProfileController::class,'edit'])->name('profile.edit');
 //    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 //    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
